@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Camlin Title Log</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+  <script type="text/javascript">
+    function active() {
+      var searchBar = document.getElementById('searchBar');
+      if (searchBar.value == 'Search...') {
+        searchBar.value = ''
+        searchBar.placeholder = 'Search...'
+      }
+    }
+    function inactive() {
+      var searchBar = document.getElementById('searchBar');
+
+        if (searchBar.value == '') {
+          searchBar.value = 'Search...'
+          searchBar.placeholder = ''
+      }
+    }
+  </script>
+
+
+</head>
+<header>
+  <h2>Mike Camlin Hyundai</h2>
+
+
+  <a href="http://mikecamlinhyundai.com"></a>
+
+
+
+  <div class="inv" <ul>
+    <li><a href="index.html">Home</a></li><br>
+    <li><a href="cars.html">Car</a></li><br>
+    <li><a href="suv.html">SUV</a></li><br>
+    <li><a href="truck.html">Truck</a></li><br>
+
+    </ul>
+  </div>
+
+
+  <div class="log">
+    <h2>Title Log</h2>
+  </div>
+
+</header>
+
+<body>
+  <form action="search.php" method="post">
+    <input type="text" id="searchBar" placeholder="" value="Search..." maxlength="8" autocomplete="off" onMouseDown="active();" onBlur="inactive()"><input type="submit" id="searchBtn" value="Go!" />
+
+  </form>
+
+
+</body>
+
+</html>
